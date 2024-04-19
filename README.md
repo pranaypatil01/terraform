@@ -1,2 +1,2 @@
 # terraform
-terraform project
+new terraform project
