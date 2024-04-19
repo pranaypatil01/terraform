@@ -4,8 +4,8 @@ resource "aws_instance" "new_instance" {
   instance_type = "t2.micro"
   key_name = "pranay-key"
   associate_public_ip_address = true
-  security_groups = [var.ec2_sg_group]
-  subnet_id = var.instance_subnet_id
+  security_groups = sg-067ee6ab3adcb3118
+  subnet_id = 	subnet-0748d1dda9f0646cf
     user_data = <<EOF
 #!/bin/bash
 sudo -i
