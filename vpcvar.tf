@@ -24,7 +24,7 @@ variable "subnet_tag"{
 }
 variable "ec2_sg"{
     type=any
-    default= aws_security_group.sg_terraform.id
+    default= ["aws_security_group.sg_terraform.id"]
 }
 variable "key_name"{
     type=any
