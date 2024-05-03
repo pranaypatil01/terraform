@@ -5,7 +5,7 @@ resource "aws_instance" "new_instance" {
   key_name = var.key_name
   associate_public_ip_address = true
   security_groups = var.ec2_sg
-  subnet_id = var.vpc_subnet_1 , var.vpc_subnet_2
+  subnet_id = var.vpc_subnet_1
     user_data = <<EOF
 #!/bin/bash
 sudo -i
