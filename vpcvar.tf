@@ -26,3 +26,15 @@ variable "ec2_sg"{
     type=any
     default= aws_security_group.sg_terraform
 }
+variable "key_name"{
+    type=any
+    default= "pranay-key"
+}
+variable "ec2_AMI"{
+    type=any
+    default= "ami-0c7217cdde317cfec"
+}
+variable "ec2_type"{
+    type=any
+    default= "t2.micro"
+}
