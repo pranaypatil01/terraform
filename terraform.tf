@@ -1,11 +1,11 @@
 resource "aws_instance" "new_instance" {
     
-    ami  = "ami-0c7217cdde317cfec"
-  instance_type = "t2.micro"
-  key_name = "pranay-key"
+    ami  = var.ec2_AMI
+  instance_type = var.ec2_type
+  key_name = var.key_name
   associate_public_ip_address = true
-  security_groups = sg-067ee6ab3adcb3118
-  subnet_id = 	subnet-0748d1dda9f0646cf
+  security_groups = var.ec2_sg
+  subnet_id = var.vpc_subnet_1 , var.vpc_subnet_2
     user_data = <<EOF
 #!/bin/bash
 sudo -i
