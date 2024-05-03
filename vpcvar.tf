@@ -18,3 +18,7 @@ variable "subnet_tag"{
     type=any
     default="own-subnet"
 }
+variable "ec2_sg"{
+    type=any
+    default= aws_security_group.sg_terraform
+}
