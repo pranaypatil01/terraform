@@ -28,7 +28,7 @@ sudo apt-get install jenkins -y
 EOF
 
   tags={
-   Name =var.new_variable
+   Name = var.ec2_name
   }
 
 }

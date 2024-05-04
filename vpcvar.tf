@@ -38,3 +38,12 @@ variable "ec2_type"{
     type=any
     default= "t2.micro"
 }
+variable "IGW_tag"{
+    type=any
+    default="own-subnet"
+}
+variable "ec2_name"{
+    type=any
+    default="own-subnet"
+}
+
